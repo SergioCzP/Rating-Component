@@ -1,0 +1,147 @@
+:root {
+  /* Primary Color */
+  --orange: hsl(25, 97%, 53%);
+
+  /* Neutral Colors */
+  --white: hsl(0, 0%, 100%);
+  --lightGrey: hsl(217, 12%, 63%);
+  --mediumGrey: hsl(216, 12%, 54%);
+  --darkBlue: hsl(213, 19%, 18%);
+  --veryDarkBlue: hsl(216, 12%, 8%);
+
+  --darkBlssue: hsl(210, 20%, 10%);
+
+  /* Font */
+  --primaryFont: "Overpass", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--primaryFont);
+  font-size: 1.5rem;
+  height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.fill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1440rem;
+  height: 100%;
+  padding: 0 2rem;
+  background-color: var(--veryDarkBlue);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+
+  margin: 0 auto;
+  max-width: 33.5rem;
+  padding: 2.5rem 2rem;
+
+  background: rgb(26, 32, 40);
+  background: linear-gradient(
+    0deg,
+    rgba(26, 32, 40, 1) 0%,
+    rgba(37, 45, 54, 1) 100%
+  );
+
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+}
+
+.card__star {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 4rem;
+  height: 4rem;
+  /* padding: 1.5rem; */
+  background-color: var(--mediumGrey);
+  background-color: hsla(216, 12%, 54%, 0.1);
+
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.card__star--circle {
+  object-fit: contain;
+}
+
+.card__title {
+  margin: 1rem 0;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.card__text {
+  margin-top: 0;
+  line-height: 1.6;
+  font-weight: 400;
+  color: var(--lightGrey);
+}
+
+.form__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__number {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+  background-color: hsla(216, 12%, 54%, 0.1);
+
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.form__label {
+  position: absolute;
+  display: block;
+  color: var(--mediumGrey);
+}
+
+.form__number--input {
+  display: block;
+  position: relative;
+  visibility: hidden;
+}
+
+.form__button {
+  margin: 2.5rem 0 0.5rem;
+  display: block;
+  padding: 1.5rem;
+  width: 100%;
+  border: none;
+  letter-spacing: 0.1rem;
+
+  color: var(--white);
+  background-color: var(--orange);
+
+  -webkit-border-radius: 10rem;
+  -moz-border-radius: 10rem;
+  border-radius: 10rem;
+}
