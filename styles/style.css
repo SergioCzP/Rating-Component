@@ -37,6 +37,10 @@ img {
   display: block;
 }
 
+input[type="radio"] {
+  transform: scale(3);
+}
+
 .fill {
   display: flex;
   flex-direction: column;
@@ -110,18 +114,23 @@ img {
 .form__number {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   padding: 1.5rem;
   background-color: hsla(216, 12%, 54%, 0.1);
 
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
+
+  transition: background-color 0.5s;
 }
 
 .form__label {
   position: absolute;
   display: block;
   color: var(--mediumGrey);
+
+  transition: color 0.5s;
 }
 
 .form__number--input {
@@ -144,4 +153,22 @@ img {
   -webkit-border-radius: 10rem;
   -moz-border-radius: 10rem;
   border-radius: 10rem;
+
+  transition: color 0.5s;
+  transition: background-color 0.5s;
+}
+
+.form__number:hover {
+  background-color: var(--lightGrey);
+  cursor: pointer;
+}
+.form__number:hover .form__label {
+  color: var(--white);
+  cursor: pointer;
+}
+
+.form__button:hover {
+  cursor: pointer;
+  background-color: var(--white);
+  color: orange;
 }
