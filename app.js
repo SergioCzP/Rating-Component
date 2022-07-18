@@ -60,6 +60,6 @@ inputsRadio.forEach((input) => {
   input.addEventListener("change", addColor);
 });
 
-const printDiv = function (num) {
-  console.log(num);
-};
+// const printDiv = function (num) {
+//   console.log(num);
+// };
