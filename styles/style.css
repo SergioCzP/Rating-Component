@@ -188,3 +188,45 @@ input[type="radio"] {
   color: var(--orange);
   cursor: pointer;
 }
+
+/* Result Card */
+.result {
+  row-gap: 0;
+  justify-content: space-between;
+}
+.result__img {
+  margin: 0 auto;
+  object-fit: contain;
+  width: 50%;
+  height: 100%;
+}
+
+.result__selected {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 3rem;
+  padding: 1rem;
+  width: 65%;
+  letter-spacing: 0;
+  background-color: hsla(216, 12%, 54%, 0.1);
+
+  -webkit-border-radius: 10rem;
+  -moz-border-radius: 10rem;
+  border-radius: 10rem;
+  color: var(--orange);
+}
+
+.result__title {
+  text-align: center;
+  font-size: 2.6rem;
+  letter-spacing: 0.1rem;
+  margin: 3rem 0 1rem;
+  color: var(--white);
+}
+
+.result__text {
+  text-align: center;
+  line-height: 1.6;
+  margin: 0;
+  color: var(--lightGrey);
+}
