@@ -136,7 +136,7 @@ input[type="radio"] {
 .form__number--input {
   display: block;
   position: relative;
-  opacity: 0.5;
+  opacity: 0;
   /* z-index: 5; */
   cursor: pointer;
 }
@@ -181,4 +181,10 @@ input[type="radio"] {
 
 .co--white:hover {
   color: var(--white);
+}
+
+.form__button:hover {
+  background-color: var(--white);
+  color: var(--orange);
+  cursor: pointer;
 }
