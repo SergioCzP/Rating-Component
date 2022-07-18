@@ -156,7 +156,7 @@ input[type="radio"] {
   width: 100%;
   border: none;
   letter-spacing: 0.1rem;
-
+  font-weight: bolder;
   color: var(--white);
   background-color: var(--orange);
 
