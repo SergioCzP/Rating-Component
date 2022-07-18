@@ -22,7 +22,7 @@
   </head>
   <body>
     <main class="fill">
-      <div class="card">
+      <div class="card rating">
         <div class="card__star">
           <img
             class="card__star--circle"
@@ -41,7 +41,7 @@
             feedback is appreciated to help us improve our offering!
           </p>
         </div>
-        <form class="form">
+        <form class="form" action="#" onsubmit="return false">
           <div class="form__flex">
             <div class="form__number">
               <label for="one" class="form__label">1</label>
@@ -104,12 +104,12 @@
             </div>
           </div>
           <div class="form__send">
-            <button class="form__button" type="button">SUBMIT</button>
+            <button class="form__button" type="submit">SUBMIT</button>
           </div>
         </form>
       </div>
       <!-- End and begin of the other card -->
-      <div class="result card">
+      <div class="result card hidden">
         <div class="result__image">
           <img
             class="result__img"
@@ -142,7 +142,9 @@
           Challenge by
           <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
             >Frontend Mentor</a
-          >. Coded by <a href="#">Sergio Cruz</a>.
+          >. Coded by
+          <a href="https://github.com/SergioCzP" target="_blank">Sergio Cruz</a
+          >.
         </p>
       </div>
     </footer>

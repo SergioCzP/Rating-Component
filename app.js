@@ -6,8 +6,17 @@ const divNumbers = document.getElementsByClassName("form__number");
 console.log(divNumbers);
 const labels = document.getElementsByClassName("form__label");
 console.log(labels);
+const cardRating = document.querySelector(".rating");
+console.log(cardRating);
+const cardResult = document.querySelector(".result");
+console.log(cardResult);
+const form = document.querySelector(".form");
+console.log(form);
+const displayValue = document.querySelector(".result__num");
+console.log(displayValue);
 
 let numInput;
+let currentValue;
 
 const indexBtnChecked = function () {
   let indexBtn;
@@ -43,6 +52,8 @@ const removeClass = function () {
 const addClass = function () {
   numInput = indexBtnChecked();
   let index = indexBtnChecked();
+  currentValue = inputsRadio.item(index).value;
+  console.log(`Value of the current input is ${currentValue}`);
   inputsRadio.item(index).parentElement.classList.add("bg--orange");
   labels.item(index).classList.add("co--white");
 };
@@ -60,6 +71,16 @@ inputsRadio.forEach((input) => {
   input.addEventListener("change", addColor);
 });
 
+const writeNumber = function () {
+  displayValue.textContent = currentValue;
+  return currentValue;
+};
+
 // const printDiv = function (num) {
 //   console.log(num);
 // };
+form.addEventListener("submit", () => {
+  cardRating.classList.add("hidden");
+  writeNumber();
+  cardResult.classList.remove("hidden");
+});

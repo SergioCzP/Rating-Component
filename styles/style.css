@@ -30,6 +30,9 @@ body {
   font-family: var(--primaryFont);
   font-size: 1.5rem;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 img {
@@ -42,10 +45,12 @@ input[type="radio"] {
 }
 
 .fill {
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 1440rem;
+  max-width: 144rem;
+  width: 100%;
   height: 100%;
   padding: 0 2rem;
   background-color: var(--veryDarkBlue);
@@ -70,6 +75,9 @@ input[type="radio"] {
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
   border-radius: 1rem;
+}
+.rating {
+  position: relative;
 }
 
 .card__star {
@@ -193,6 +201,7 @@ input[type="radio"] {
 .result {
   row-gap: 0;
   justify-content: space-between;
+  position: relative;
 }
 .result__img {
   margin: 0 auto;
@@ -229,4 +238,24 @@ input[type="radio"] {
   line-height: 1.6;
   margin: 0;
   color: var(--lightGrey);
+}
+
+.hidden {
+  display: none;
+}
+
+/* Footer */
+footer {
+  position: absolute;
+  bottom: 0;
+}
+
+.attribution__container {
+  color: var(--white);
+  font-weight: bolder;
+}
+
+.attribution__container a {
+  color: var(--orange);
+  text-decoration: none;
 }
