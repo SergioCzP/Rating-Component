@@ -246,7 +246,7 @@ input[type="radio"] {
 
 /* Footer */
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
 }
 
