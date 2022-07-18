@@ -58,8 +58,8 @@ input[type="radio"] {
 
   margin: 0 auto;
   max-width: 33.5rem;
-  padding: 2.5rem 2rem;
-
+  padding: 2.5rem;
+  letter-spacing: -0.09rem;
   background: rgb(26, 32, 40);
   background: linear-gradient(
     0deg,
@@ -136,7 +136,9 @@ input[type="radio"] {
 .form__number--input {
   display: block;
   position: relative;
-  visibility: hidden;
+  opacity: 0.5;
+  /* z-index: 5; */
+  cursor: pointer;
 }
 
 .form__button {
@@ -158,17 +160,25 @@ input[type="radio"] {
   transition: background-color 0.5s;
 }
 
+.bg--orange {
+  background-color: orange;
+}
+
+.co--white {
+  color: var(--white);
+}
+
 .form__number:hover {
   background-color: var(--lightGrey);
-  cursor: pointer;
 }
 .form__number:hover .form__label {
   color: var(--white);
-  cursor: pointer;
 }
 
-.form__button:hover {
-  cursor: pointer;
-  background-color: var(--white);
-  color: orange;
+.bg--orange:hover {
+  background-color: orange;
+}
+
+.co--white:hover {
+  color: var(--white);
 }
