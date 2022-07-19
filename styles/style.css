@@ -46,7 +46,7 @@ img {
 }
 
 input[type="radio"] {
-  transform: scale(3);
+  transform: scale(4);
 }
 
 .fill {
@@ -127,8 +127,10 @@ input[type="radio"] {
 .form__number {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: flex-end;
   padding: 1.5rem;
+  width: 5rem;
+  height: 5rem;
   background-color: hsla(216, 12%, 54%, 0.1);
 
   -webkit-border-radius: 50%;
